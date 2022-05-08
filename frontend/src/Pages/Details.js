@@ -60,12 +60,12 @@ export default function Details(props) {
     const [posts, setPosts] = useState([])
 
     const { id } = useParams()
-    console.log("id",id)
+    console.log("id", id)
     const ID = localStorage.getItem("Id")
-    console.log("ID",ID)
+    console.log("ID", ID)
     var token = localStorage.getItem("Token")
 
-    
+
     const handler = () => {
         var config = {
             method: 'get',
@@ -101,26 +101,22 @@ export default function Details(props) {
 
             <div className="accordion-body shadow rounded">
                 <ul className="ul" style={{ listStyle: 'none' }}>
-                    <li className="full"><span className="left">TASK NAME</span><span className="right">FACEBOOK UI</span>
+
+                    <li className="full"><span className="left">TASK NAME</span><span className="right">{posts?.taskName}</span>
                     </li>
-                    <li className="full"><span className="left">TASK NATURE</span><span className="right"> AAA</span>
+                    <li className="full"><span className="left">TASK NATURE</span><span className="right"> {posts?.taskNature}</span>
                     </li>
-                    <li className="full"><span className="left">CREATED BY</span><span className="right"> ASHRAF</span>
+                    <li className="full"><span className="left">CREATED BY</span><span className="right"> {posts?.createdBy}</span>
                     </li>
-                    <li className="full"><span className="left">START DATE</span> <span className="right"> 02/2/2022</span>
+                    <li className="full"><span className="left">START DATE</span> <span className="right"> {posts?.startDate}</span>
                     </li>
-                    <li className="full"><span className="left">END DATE</span> <span className="right"> 02/2/2022 </span>
+                    <li className="full"><span className="left">END DATE</span> <span className="right">{posts?.endDate} </span>
                     </li>
-                    <li className="full"><span className="left">STATUS</span> <span className="right"> Done </span>
+                    <li className="full"><span className="left">STATUS</span> <span className="right"> {posts?.status} </span>
                     </li>
                     <li className="full"><span className="left">ASSIGNED TO</span>
                         <span className="right">
-                            <ul>
-                                <li>ashraf</li>
-                                <li>ashraf</li>
-                                <li>ashraf</li>
-                                <li>ashraf</li>
-                            </ul>
+                            id: {posts?.assignedToUser}
                         </span>
                     </li>
 
@@ -129,8 +125,7 @@ export default function Details(props) {
 
                     <div className="accordion-body" style={{ textAlign: "center" }}>
                         <p>
-                            What is Lorem Ipsum?
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                            {posts?.description}
                         </p>
                     </div>
                 </ul>
@@ -147,9 +142,9 @@ export default function Details(props) {
 
             </div>
 
-            <div classNameName='py-05'>
+            {/* <div classNameName='py-05'>
                 <Button variant="contained" classNameName="productdetailbtn" color="primary">Go Back</Button>
-            </div>
+            </div> */}
 
         </div>
 
