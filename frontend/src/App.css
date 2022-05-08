@@ -1,0 +1,568 @@
+.error {
+    position: absolute;
+    color: red;
+    font-size: .6rem;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===================================================
+|||||||||||| Navbar
+====================================================== */
+
+.nav-link {
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.collapse {
+    /* display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; */
+    margin-left: 25%;
+
+}
+
+.nav-item {
+    margin-left: 2%;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    padding-right: 20px;
+    margin: 0% 8%;
+    border-right-style: solid;
+}
+
+.navbar-brand , .nav-link{
+    color: white !important;
+}
+
+/* ===================================================
+|||||||||||| create new Task Form
+====================================================== */
+
+
+.container-form {
+    max-width: 1300px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 30px;
+}
+
+.title {
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.container-form .header_title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #2b2b2b;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.container-form .form {
+    width: 100%;
+    margin: 30px auto;
+    padding: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .325);
+    border: 1px solid #999999;
+    border-radius: 7px;
+
+}
+
+.container-form .form .section {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}
+
+.container-form .form #last_section {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: none;
+}
+
+.container-form .form .section .input_field {
+    margin-top: 5px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.container-form .form .section .input_field label {
+    width: 100px;
+    color: black;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.container-form .form .section .input_field .form-input,
+.container-form .form .section .input_field .textarea {
+    width: 100%;
+    outline: none;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+
+
+.container-form .form .section .input_field:last-child {
+    margin-bottom: 0;
+}
+
+
+
+@media (max-width: 800px) {
+    .container-form .form .section .input_field {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container-form .form .section .input_field label {
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 750px) {
+    .container-form .form .section .input_field .fuel_div {
+        display: block;
+    }
+}
+
+@media (max-width: 375px) {
+    .container-form {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* ===================================================
+|||||||||||| create new Project
+====================================================== */
+
+
+.mainprojectDetals {
+    width: 90%;
+}
+
+.createNewProject {
+    text-align: center;
+    margin: 2% 0;
+}
+
+.parentcreateNewProject {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    height: 60vh;
+    margin: 2% 10%;
+    border-radius: 20px;
+}
+
+.createNewProject>h2 {
+    letter-spacing: 10px;
+}
+
+.childcreateNewProject {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    height: 40%;
+}
+
+.childcreateNewProject>P {
+    font-size: 20px;
+    color: gray;
+    letter-spacing: 5px;
+    text-align: left;
+}
+
+.childcreateNewProject>input {
+    width: 60%;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.buttonContainer {
+    margin-right: -40%;
+}
+
+
+/* ///////////IMG CARD/////////////// */
+
+
+
+.cardDetails-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.card-main {
+    width: 500px;
+    margin: 2%;
+}
+
+.card {
+    text-align: center;
+}
+
+.order {
+    padding: 4px 20px !important;
+    font-size: 16px !important;
+    border-radius: 10px !important;
+}
+
+/* /////Card container////// */
+
+.parentCard {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+/* ///////////////// */
+
+.headTasks {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.headCreateNewProject {
+    display: flex;
+    justify-content: center;
+}
+
+.headCreateNewProject>h1 {
+    font-size: 60px;
+    color: gray;
+    letter-spacing: 15px;
+    font-weight: 100;
+}
+
+
+
+
+.cardTask {
+    width: 300px;
+    height: 350px;
+    border: 2px gray solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.cardTask>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+}
+
+.details>button {
+    width: 100px;
+    height: 40px;
+}
+
+/* ===================================================
+  |||||||||||| Project Details
+  ====================================================== */
+
+.headCreateNewProject>h1 {
+    font-size: 60px;
+    color: gray;
+    letter-spacing: 15px;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.TableCell {
+    font-size: 20px !important;
+}
+
+.headTasks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 10%;
+    padding-top: 20px;
+    border-top: 2px solid grey;
+}
+
+
+.employeeslist {
+    margin: 4% 10%;
+    padding-top: 20px;
+    border-top: 2px solid grey;
+}
+
+.employees {
+    margin: 10% 0;
+}
+
+
+.childProjectDetails {
+    display: flex;
+    /* width: 300px; */
+    justify-content: center;
+    word-spacing: 12px;
+}
+
+.childProjectDetails>p {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0px 10px;
+}
+
+.createNewTask {
+    height: 60px;
+
+}
+
+@media screen and (max-width: 1400px) {
+    .headCreateNewProject>h1 {
+        font-size: 40px;
+        font-weight: 500;
+        letter-spacing: 8px;
+
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .headCreateNewProject>h1 {
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: 5px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .projectDetails>div {
+        width: 85vw !important;
+        text-align: center;
+        /* display: flex;
+      justify-content: center; */
+    }
+
+    .projectDetails {
+        display: inline-block !important;
+    }
+
+    .createNewProject {
+        width: 90vw;
+        margin-top: 50px;
+    }
+
+    .newProjectButton {
+        width: 200px;
+    }
+
+    .childcreateNewProject>input {
+        width: 80%;
+        height: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .headCreateNewProject>h1 {
+        font-size: 25px;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+
+}
+
+
+
+
+/* ===================================================
+|||||||||||| Project Table
+====================================================== */
+
+
+
+.table-container {
+    padding: 0 14%;
+    margin: 10% auto;
+}
+
+.table-heading {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    font-family: cursive;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 4% 0;
+}
+
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table thead {
+    /* background-color: red; */
+    margin-bottom: 10%;
+}
+
+.table thead th {
+    font-size: 18px !important;
+    padding: 10px;
+    vertical-align: top;
+    text-transform: uppercase;
+
+}
+
+.table tbody td {
+    font-size: 18px;
+    padding: 20px 6px;
+    text-align: center;
+}
+
+.table tbody tr {
+    height: 10%;
+}
+
+
+.table tbody tr td .btn {
+    width: 130px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgb(27, 27, 163);
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+.table tbody td .btn:hover {
+    background-color: rgb(51, 235, 195);
+    color: black;
+}
+
+.table tr:hover {
+    transform: scale(1.02);
+    border: 1px white solid;
+
+}
+
+@media only screen and (max-width:768px) {
+
+    .table thead {
+        display: none;
+    }
+
+    .table,
+    .table tbody,
+    .table tr,
+    .table td {
+        display: block;
+        width: 100%;
+    }
+
+    .table tr {
+        margin-bottom: 15px;
+        padding-right: 20px;
+
+    }
+
+    .table tbody tr td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    .table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        text-align: left;
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+/* ===================================================
+|||||||||||| Details 
+====================================================== */
+
+.ul {
+    padding: 4% 20%;
+    margin-top: 2%;
+}
+
+
+
+.full {
+    font-size: 18px;
+    display: flex;
+    margin: 2%;
+    justify-content: space-between;
+}
+
+
+
+.left{
+    font-weight: 600;
+}
